@@ -27,4 +27,90 @@
   section { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
   section h2 { font-size: 1.6rem; margin-bottom: 24px; border-left: 4px solid var(--accent); padding-left: 12px; }
   .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-  .card { background: var(--card); border-radius: 12px;
+  .card { background: var(--card); border-radius: 12px; padding: 24px; border: 1px solid #262a35; }
+  .card h3 { margin-bottom: 10px; color: var(--accent); }
+  .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 14px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+  .tag { background: #262a35; color: var(--text); font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; }
+  .card-links a { color: var(--accent); text-decoration: none; margin-right: 14px; font-size: 0.9rem; font-weight: 600; }
+  footer { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Shahrizoda</h1>
+  <p>AI/ML Engineer in training — building RAG systems, multi-agent apps, and full-stack AI products. Background in Uzbek linguistics & philology.</p>
+  <div class="links">
+    <a href="https://github.com/Shahrizoda1707" target="_blank">GitHub</a>
+    <a href="mailto:shahrizodahamidova0@gmail.com">Email</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+  </div>
+</header>
+
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <h3>University of World Languages</h3>
+    <p>English Philology and Language Teaching — 2nd year student, enrolled 2025</p>
+  </div>
+  <div class="card" style="margin-top: 16px;">
+    <h3>BePro Academy — UN AI/ML Mentorship Program</h3>
+    <p>End-to-end AI/ML curriculum (data science, machine learning, AI engineering) — since April 2025</p>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Loan Terms Assistant</h3>
+      <p>RAG-based assistant for loan/credit Terms & Conditions, with QLoRA fine-tuning of Qwen2.5-1.5B-Instruct and a Gradio demo.</p>
+      <div class="tags">
+        <span class="tag">RAG</span>
+        <span class="tag">QLoRA</span>
+        <span class="tag">Qwen2.5</span>
+        <span class="tag">Gradio</span>
+      </div>
+      <div class="card-links">
+        <a href="https://github.com/Shahrizoda1707/loan-terms-assistant" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Multi-Agent AI Analyst</h3>
+      <p>Supervisor-retriever-critic multi-agent architecture built with LangGraph, analyzing a fictional company's data with a FastAPI backend and Next.js frontend.</p>
+      <div class="tags">
+        <span class="tag">LangGraph</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Next.js</span>
+      </div>
+      <div class="card-links">
+        <a href="https://multi-agent-analyst-xi.vercel.app" target="_blank">Live Demo →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Agentic RAG App</h3>
+      <p>Full-stack agentic RAG application combining LangGraph, FastAPI, and Next.js, powered by DeepSeek LLM and HuggingFace embeddings.</p>
+      <div class="tags">
+        <span class="tag">LangGraph</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">DeepSeek</span>
+      </div>
+      <div class="card-links">
+        <a href="https://agentic-rag-app-36v8.onrender.com" target="_blank">Live Demo →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Shahrizoda — Built with GitHub Pages
+</footer>
+
+</body>
+</html>
